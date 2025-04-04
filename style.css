@@ -1,0 +1,194 @@
+ 
+      .classMargin {
+        margin: 0 5px;
+      }
+      #add {
+        padding: 2px 15px;
+      }
+      #edit{
+        padding: 2px 15px;
+      }
+      
+      .d-none {
+        display: none;
+      }
+      .d-block {
+        display: block;
+      }
+      .btnAdd {
+        background-color: #fff;
+        color: #4caf50;
+        font-weight: bold;
+        border: 1px solid #4caf50;
+        border-radius: 50%;
+        padding: 1px 6px;
+      }
+      .headStyle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2d5468;
+        padding: 10px 30px;
+      }
+
+      .button {
+        padding: 8px 18px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+      }
+      #yesDelete{
+        background-color: #4caf50;
+        color: #fff;
+        border: 1px solid #4caf50;
+        padding: 4px 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px rgb(49, 46, 46);
+      }
+#noDelete{
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 4px 10px;
+    box-shadow: 1px 1px rgb(49, 46, 46);
+}
+      .buttonDelete {
+        background-color: red;
+        border: 1px solid red;
+      }
+
+      .buttonDelete:hover {
+        background-color: #a4041c;
+      }
+
+      .buttonAdd {
+        margin-left: 20px;
+        background-color: #4caf50;
+        border: 1px solid #4caf50;
+      }
+
+      .buttonAdd:hover {
+        background-color: #258628;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        /* min-width: 850px; */
+        /* margin: 25px 0px; */
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 10px #dddddd;
+        width: 100%;
+        margin: 12px auto;
+      }
+
+      table tr th {
+        text-align: left;
+      }
+
+      table thead tr h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 30px;
+        padding: 20px 0px;
+        margin: 0px;
+        background-color: #2d5468;
+        color: #fff;
+      }
+
+      table th,
+      td {
+        padding: 16px;
+      }
+
+      table tbody tr {
+        border-bottom: 2px solid #dddddd;
+      }
+
+      table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      #mainHeading {
+        padding: 0px;
+      }
+      /* #form {
+        background: #c7c5c5;
+        position: absolute;
+        mix-blend-mode: darken;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+      } */
+      .modal {
+        width: 400px;
+        height: 250px;
+        padding: 32px;
+        background-color: rgb(249, 245, 245);
+        border: 2px solid #000;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+      .inputBox {
+        width: 90%;
+      }
+      .button2 {
+        padding: 0.5px 4px;
+      }
+      .formArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .formElement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      .buttonIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 10px 5px;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        margin: 0px;
+      }
+      .marginIcon {
+        margin-left: 10px;
+      }
+      #warning {
+        width: 200px;
+        height: 100px;
+        padding: 32px;
+        background-color: rgb(249, 245, 245);
+        border: 2px solid #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+      .confirmZone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 10px;
+      }

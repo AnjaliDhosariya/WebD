@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body onload="getData()">
+    <div class="d-none" id="warning">
+      <h4 style="color: red; text-align: center; margin: 5px">
+        !!Confirmation!!
+      </h4>
+      Do you really want to delete the Data??? if yes click on yes!!
+      <div class="confirmZone">
+        <button id="yesDelete">Yes</button>
+        <button id="noDelete" onclick="closeModalN()">NO</button>
+      </div>
+    </div>
+
+    <div class="d-none" id="form">
+      <div class="modal" id="modal">
+        <div style="text-align: center; margin: 10px 0">FORM</div>
+        <div class="formArea">
+          <div class="formElement">
+            <div style="width: 20%">Name :</div>
+            <div style="width: 80%">
+              <input
+                id="userName"
+                type="text"
+                class="inputBox"
+                onclick="clearNameError()"
+              />
+              <p id="nameError" class="error"></p>
+            </div>
+          </div>
+          <div class="formElement">
+            <div style="width: 20%">E-mail :</div>
+            <div style="width: 80%">
+              <input
+                id="userMail"
+                type="text"
+                class="inputBox"
+                onclick="clearMailError()"
+              />
+              <p id="mailError" class="error"></p>
+            </div>
+          </div>
+          <div class="formElement">
+            <div style="width: 20%">Address :</div>
+            <div style="width: 80%">
+              <input
+                type="text"
+                id="userAddress"
+                class="inputBox"
+                onclick="clearAddressError()"
+              />
+              <p id="addressError" class="error"></p>
+            </div>
+          </div>
+          <div class="formElement">
+            <div style="width: 20%">Contact :</div>
+            <div style="width: 80%">
+              <input
+                type="text"
+                id="userContact"
+                class="inputBox"
+                onclick="clearContactError()"
+              />
+              <p id="contactError" class="error"></p>
+            </div>
+          </div>
+        </div>
+        <div class="buttonIcons">
+          <button id="cancel" style="padding: 2px 10px;" onclick="closeModal()">
+            <i class="fa fa-close" style="margin: 0 5px; color: red"></i>Cancel
+          </button>
+          <button id="add" onclick="addDataToTable()">
+            <span class="btnAdd button2">+</span> Add
+          </button>
+          <button id="edit" class="d-none">
+            <span class="button2"><i class="fa fa-edit" style="color: green"></i></span>Edit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullPage">
+      <table>
+        <thead>
+          <tr>
+            <th id="mainHeading" colspan="6">
+              <div class="headStyle">
+                <div>
+                  <h1>Manage Employees</h1>
+                </div>
+                <div>
+                  <button
+                    class="button buttonDelete"
+                    id="deleteButton"
+                    onclick="deleteFunction()"
+                  >
+                    <i class="fa fa-trash" style="margin: 0 5px"></i>Delete
+                  </button>
+                  <button
+                    class="button buttonAdd"
+                    id="addButton"
+                    onclick="openModal()"
+                  >
+                    <span class="btnAdd">+</span> Add New Employee
+                  </button>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
